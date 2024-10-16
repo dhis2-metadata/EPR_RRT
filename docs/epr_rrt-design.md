@@ -268,6 +268,31 @@ This dashboard is meant to provide an example for monitoring different component
 
 #### Applications overview
 
+Overview of the number of submission, accepted in the RRT and the acceptance rate
+
+![Applications overview](resources/image/RRT_014.png)
+
+#### RRT members available
+
+RRT members actually available for deployments and their geographic distribution
+
+![RRT members availables](resources/image/RRT_015.png)
+
+![RRT members availables by district of residence](resources/image/RRT_016.png)
+
+#### RRT members characteristics
+
+Visualisations with the characteristics of RRT members such as the role to which they have been validated, language spoken, working situation, licence status, training and skills.
+
+![RRT members by validated role](resources/image/RRT_017.png)
+
+![RRT members by language spoken and working situation](resources/image/RRT_018.png)
+
+#### RRT member linelist
+
+An example of linelist with all the RRT member and their main/relevant information that can be use for the selection of possible candidates for deployments
+
+![RRT members linelist](resources/image/RRT_019.png)
 
 ## User group
 
