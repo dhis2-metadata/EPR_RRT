@@ -308,17 +308,17 @@ In the demo you can find other two groups as an example of access regulation bas
 
 | User        | Stage                                                       | Data              | Data              |
 |-------------|-------------------------------------------------------------|-------------------|-------------------|
-| RRT member  | Education and professional experience                       | Can edit and view | Can edit and view |
-| RRT member  | Skills                                                      | Can edit and view | Can edit and view |
-| RRT member  | Availability, trainings and medical clearance - RRT member  | Can edit and view | Can edit and view |
-| RRT manager | Education and professional experience                       | Can view only     | Can view only     |
-| RRT manager | Skills                                                      | Can view only     | Can view only     |
-| RRT manager | Acceptance                                                  | Can edit and view | Can edit and view |
-| RRT manager | Availability, trainings and medical clearance - RRT member  | Can view only     | Can view only     |
-| RRT manager | Availability, trainings and medical clearance - RRT manager | Can edit and view | Can edit and view |
-| RRT manager | Roster deployment                                           | Can edit and view | Can edit and view |
+| RRT_member  | Education and professional experience                       | Can edit and view | Can edit and view |
+| RRT_member  | Skills                                                      | Can edit and view | Can edit and view |
+| RRT_member  | Availability, trainings and medical clearance - RRT member  | Can edit and view | Can edit and view |
+| RRT_manager | Education and professional experience                       | Can view only     | Can view only     |
+| RRT_manager | Skills                                                      | Can view only     | Can view only     |
+| RRT_manager | Acceptance                                                  | Can edit and view | Can edit and view |
+| RRT_manager | Availability, trainings and medical clearance - RRT member  | Can view only     | Can view only     |
+| RRT_manager | Availability, trainings and medical clearance - RRT manager | Can edit and view | Can edit and view |
+| RRT_manager | Roster deployment                                           | Can edit and view | Can edit and view |
 
-Passowrd for both users is *District1#*
+The password for both users is the same as the generic demo user: District1#
 
 ## Implementation considerations & Local Adaptation
 
