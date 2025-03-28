@@ -2,18 +2,19 @@
 
 ## Introduction
 
-The DHIS2 Rapid Response Team (RRT) Roster is a flexible, digitised system that helps manage public health RRTs during non-emergencies and emergencies. Built on the DHIS2 platform, which is used in over 40 countries for health surveillance, the RRT Roster links emergency detection alerts deployable RRT response data. Developed to accelerate the deployment of the right personnel when public health threats arise, the RRT Roster aims to ensure faster, more informed, and coordinated responses. It is the first module of its kind to integrate responder data with surveillance systems, significantly reducing the time from detection to response.
+The DHIS2 Rapid Response Team (RRT) Roster is an adaptable and flexible digitized workforce system that helps manage public health RRTs during routine (non-emergencies) and emergencies. Built on the DHIS2 platform that is used in over 40 countries for health surveillance, the RRT Roster aims to accelerate the identification and deployment of appropriate RRT members during public health emergencies. It is the first module of its kind to integrate responder data with the DHIS2 surveillance systems.
 
-Developed in collaboration with the US CDC’s Emergency Response Capacity Team (ERCT), the RRT Roster module uses DHIS2’s advanced data and analytics tools to streamline RRT workforce management. The DHIS2 system guides users through the RRT workforce cycle, from finding and selecting staff, notifying, and deploying staff for an emergency. This makes it faster and more efficient to mobilise skilled teams as well as support with workforce forecasting and deployment analysis.
+Developed in collaboration with the US CDC’s Emergency Response Capacity Team (ERCT), the RRT Roster module uses DHIS2’s advanced data and analytics tools to streamline RRT workforce management. The DHIS2 system guides users through the RRT workforce cycle, from finding and selecting staff to notifying, and deploying them for an emergency. This makes it faster and more efficient to mobilize skilled teams as well as support with workforce forecasting and deployment analysis.
 
-The system follows a customizable six-step process: registration, vetting, responder selection, readiness tracking, deployment notifications, and post-deployment evaluation ensuring a systematic approach to managing emergency RRT responders. Data management capabilities such as ease of data entry, deployer selection, data validation, data shareability and analysis is also incorporated into the process. Other hallmark features include automated notifications and customizable visual dashboards and reporting tools further support managers and leadership make better decisions during an emergency.
+The system follows a customizable six-step process: registration, vetting, responder selection, readiness tracking, deployment notifications, and post-deployment evaluation ensuring a systematic approach to managing emergency RRT responders. Data management capabilities such as ease of data entry, deployer selection, data validation, data shareability and analysis are also incorporated into the process. Other key features include automated notifications and customizable visual dashboards, along with reporting tools that help managers and leadership make better decisions during an emergency.
 
-This system design document offers a comprehensive overview of the ERR configuration within DHIS2, including detailed descriptions of the Tracker and dashboard functionalities, data management strategies, and implementation considerations. This document also does not consider the resources and infrastructure needed to implement such a system, such as servers, power, internet connections, backups, training and user support, which can be found in the DHIS2 Tracker Implementation Guide. The tracker was designed based on CDC RRT Roster and Management Guidelines.
-Reference metadata for this toolkit is available at: [dhis2.org/metadata-downloads.](https://dhis2.org/metadata-downloads/)
+This system design document offers a comprehensive overview of the ERR configuration within DHIS2, including detailed descriptions of the Tracker and dashboard functionalities, data management strategies, and implementation considerations. This document also does not consider the resources and infrastructure needed to implement such a system, such as servers, power, internet connections, backups, training and user support, which can be found in the . The tracker was designed based on CDC RRT Roster and Management Guidelines.
+
+Reference metadata for this toolkit is available at [dhis2.org/metadata-downloads.](https://dhis2.org/metadata-downloads/)
 
 ### Acknowledgements
 
-The rapid response team rostering tool was developed in partnership with CDC’s Emergency Response Capacity Team and HISP Uganda, with funding support through a cooperative agreement between HISP Centre and US CDC. We would like to extend our gratitude to the Ministries of Health in Uganda, DRC and Sierra Leone, CDC staff and the community who contributed their inputs, field experiences and expertise to the development of the tool.
+The Rapid Response Team Rostering Tool was developed in partnership with US CDC’s Emergency Response Capacity Team and HISP Uganda, with funding support through a cooperative agreement between HISP Centre and US CDC. We would like to extend our gratitude to the Ministries of Health in Uganda, DRC and Sierra Leone, CDC staff and the community who contributed their inputs, field experiences and expertise to the development of the tool.
 
 ## System design overview
 
@@ -23,48 +24,49 @@ Rapid Response Teams (RRTs) are multidisciplinary teams that are trained and equ
 
 A roster is a searchable system that stores and manages up-to-date information about Rapid Response Team (RRT) responders and members. It functions as a registry of specialists, tracking essential data such as skills, location, availability, and readiness requirements. This system allows for quick identification of staff with the necessary skills for deployment in public health emergencies. A roster may also be referred to as a personnel management or workforce system, designed to support efficient emergency response operations.
 
-A well-maintained roster is crucial for efficient emergency preparedness and response. It ensures that health authorities can quickly mobilise qualified staff by having a comprehensive view of each RRT member's skills, training, and readiness status. Key benefits of having a roster include:
+A well-maintained roster is crucial for efficient emergency preparedness and response. It ensures that health authorities can quickly mobilize qualified staff by having a comprehensive view of each RRT member's skills, training, and readiness status. Key benefits of having a roster include:
 
-- Rapid identification of RRT members with the necessary skills and characteristics to meet the needs of an emergency response.
-- Efficient mobilisation of surge staff with up-to-date contact information, ensuring immediate response.
-- Monitoring and optimising the composition of the roster to ensure preparedness.
-- Tracking readiness requirements such as completed training and certifications, ensuring staff are prepared for deployment
+- Rapid identification of RRT members with the necessary skills and characteristics to meet the needs of an emergency response
+- Efficient mobilization of surge staff with up-to-date contact information, ensuring immediate response
+- Monitoring and optimizing the composition of the roster to ensure preparedness
+- Tracking readiness requirements such as completed trainings and certifications, ensuring staff are prepared for deployment
+
 
 The RRT roster system supports the entire staffing and deployment process, from identifying and selecting candidates to tracking their readiness and managing their post-deployment evaluations. The system operates through a six-step workflow: RRT staffing recruitment and registration, vetting of candidates, selection of candidates, deployment readiness, deployment notification through pushed- and automated communications, and post-deployment evaluation including in-depth analysis dashboards and reporting.
 
 This system is not only valuable during emergencies but also plays an essential role in preparedness during non-emergency periods. In preparedness mode, it allows users to monitor staff skills, track training completion, assess surge capacity readiness, and verify staff participation in previous responses. In response mode, the system facilitates the rapid selection and deployment of responders, monitors the availability of surge capacity, and checks the status of ongoing deployments.
 
-By integrating robust data management, real-time communication, and in-depth workforce analysis, a roster maximises both response efficiency and effectiveness, ensuring a well-prepared and capable public health emergency response team.
+By integrating robust data management, real-time communication, and in-depth workforce analysis, a roster maximizes both response efficiency and effectiveness, ensuring a well-prepared and capable public health emergency response team.
 
 ### Intended users
 
-When integrated into a national DHIS2 system, the DHIS2 Rapid Response Team (RRT) Roster can be effectively utilised at any level – national, subnational or district – during both routine (non-emergency) and emergency response phases. Key functions including roster management, candidate selection and workforce recruitment and verification can be adapted based on the size of the roster and needs of the response.
+When integrated into a national DHIS2 system, the DHIS2 Rapid Response Team (RRT) Roster can be effectively utilized at any level – national, subnational or district – during both routine (non-emergency) and emergency response phases. Key functions including roster management, candidate selection and workforce recruitment and verification can be adapted based on the size of the roster and needs of the response.
 
 #### National and Subnational RRT Manager or RRT Roster Manager
 
-At the national or subnational level, RRT Managers or RRT Roster Managers are responsible for ensuring the RRT Roster is effectively established and maintained during non-emergency periods and utilised during emergency periods. An RRT Manager or RRT Roster Manager my utilise the system during the non-emergency phase to:
+At the national or subnational level, RRT Managers or RRT Roster Managers are responsible for ensuring the RRT Roster is effectively established and maintained during non-emergency periods and utilized during emergency periods. An RRT Manager or RRT Roster Manager may utilize the system during the non-emergency phase to:
 
 - recruit potential responders
 - identify, verify, and accept candidates for current and future roles
 - monitor skills and experience of rostered staff for timeliness and accuracy
 - track completed and needed trainings
-- communicate with rostered staff about readiness
+- communicate with rostered staff about readiness.
 
 The suite of management tools provides valuable non-emergency insights such as submission metrics, application data, and automatic staff selection notifications. Furthermore, managers can generate reports on responder demographics, workforce skills capabilities, availability forecasting, and training and readiness requirement completion.
 
-During an emergency or outbreak, RRT Managers or RRT Roster Managers can use the verification, search, and notification features to identify and select responders based on technical skills, language proficiency, availability, and location. Managers may also utilise the system to customise dashboards for management support and showcase surge capacity, deployments, and other critical response metrics for a variety of audiences including EOC staff and leadership.
+During an emergency or outbreak, RRT Managers or RRT Roster Managers can use the verification, search, and notification features to identify and select responders based on technical skills, language proficiency, availability, and location. Managers may also utilize the system to customize dashboards for management support and showcase surge capacity, deployments, and other critical response metrics for a variety of audiences including EOC staff and leadership.
 
 #### District Level Workforce Managers
 
-District Workforce Managers support their district’s roster during the non-emergency and emergency phases. Workforce Managers may use the system to select staff, ensure roster information is accurate and up to date, and ensure their district has sufficient personnel with specialised skills to support core RRT functions and surge capacity. During emergencies, District Managers may be responsible for deploying staff into the field, ensuring effective response at the local level.
+District Workforce Managers support their district’s roster during the non-emergency and emergency phases. Workforce Managers may use the system to select staff, ensure roster information is accurate and up to date, and ensure their district has sufficient personnel with specialized skills to support core RRT functions and surge capacity. During emergencies, District Managers may be responsible for deploying staff into the field, ensuring effective response at the local level.
 
 #### Potential RRT Responders
 
-Potential RRT Responders are staff who are applying to serve as part of a RRT roster. Potential responder candidates are dependent on country requirements but can include active full-time technical and operational staff, active part-time technical and operational staff, retired public health workers, Fellows, students, and non-technical surge support volunteers. Staff interested in joining the roster will use the system to complete the RRT Roster application. Application data will be dependent on the requirements of the country but may include demographics, education, technical and language skills, relevant training, and availability.
+Potential RRT Responders are staff who are applying to serve as part of a RRT roster. Potential responder candidates are dependent on country requirements but can include active full-time technical and operational staff, active part-time technical and operational staff, retired public health workers, Fellows, students, and non-technical surge support volunteers. Staff interested in joining the roster will use the system to complete the RRT Roster application. Application data will be dependent on the requirements of the country but may include demographics, education, technical and language skills, relevant trainings, and availability.
 
 #### Selected RRT Responders
 
-Once approved and selected, RRT Responders may use the system to update their personal information, such as demographics, education, and skills. Responders may also use the system to update training completions as well as readiness requirements including passports, medical clearances, and safety training. During an emergency, responders may receive notifications about potential deployments, and upon return from the field, may be asked to upload important documents such as handover notes and evaluation forms.
+Once approved and selected, RRT Responders may use the system to update their personal information, such as demographics, education, and skills. Responders may also use the system to update training completions as well as readiness requirements including passports, medical clearances, and safety trainings. During an emergency, responders may receive notifications about potential deployments, and upon return from the field, may be asked to upload important documents such as handover notes and evaluation forms.
 
 #### Supervisors and Managers
 
@@ -72,7 +74,7 @@ A requirement for RRT Responder acceptance, may include supervisory approval fro
 
 #### Emergency Coordination Unit (ECU) and Emergency Operations Center (EOC) Staff
 
-Responsible ECU and EOC staff at national or subnational levels can use the system’s dashboard feature to assess surge capacity readiness during the watch or non-emergency phase and monitor availability and workforce allocation during a response. Customizable dashboards that are completed by the RRT Manager or RRT Roster Manager may provide ECU and EOC staff a visual overview of the roster’s size, skill availability and need, and potential surge staff, enabling the PHEOC or ECU staff to make informed planning, operational and logistics decisions prior to and in real-time during an emergency. 
+Responsible ECU and EOC staff at national or sub-national levels can use the system’s dashboard feature to assess surge capacity readiness during the watch or non-emergency phase and monitor availability and workforce allocation during a response. Customizable dashboards that are completed by the RRT Manager or RRT Roster Manager may provide ECU and EOC staff a visual overview of the roster’s size, skill availability and need, and potential surge staff, enabling the PHEOC or ECU staff to make informed planning, operational and logistics decisions prior to and in real-time during an emergency.
 
 #### Leadership
 
@@ -81,6 +83,8 @@ Leadership, including Ministry of Health and National Public Health Institute (N
 The dashboard also offers key metrics, such as total person-days, roles filled and required, and average deployment length, helping leaders assess the effectiveness of RRT rostering. By tracking RRT roster non-emergency and emergency data, leadership can better understand the system’s impact on response efforts and the overall effectiveness of RRT programs during public health emergencies.
 
 ## Tracker
+
+The rostering tool was designed to support the following functionalities. DHIS2 software features are configured and used to meet these needs. Additional functionalities may also be integrated into the roster through local adaptation, extension and customization.
 
 ### Tracker program structure
 
@@ -92,30 +96,32 @@ The stages and flow of information is meant to represent a generic flow of infor
 
 - Information flow:
   - Admission process:
-    - Submission of a candidature: Enrollment, Education and professional experience
-    - Vetting: Acceptance
-  - Maintenance: Availability, trainings and medical clearance
+    - Submission of a candidature: Enrollment, Education and professional experience and skills
+    - Vetting: Verification and acceptance
+  - Maintenance: Candidate deployment availability, completion of required trainings, and medical clearance
   - Deployment: Deployment
 - Accesses based on roles (refer to the above image for the colours):
-  - responder / RRT members: purple 
-    - Enrollment
-    - Education and professional experience
-    - Skills
-    - Availability, trainings and medical clearance - RRT member
-  - RRT Manager: green
+  - Potential and selected RRT members / responders: purple 
+    - Enrollment - Potential RRT members
+    - Education and professional experience - Potential RRT members
+    - Skills - Potential RRT members
+    - Deployement availability, trainings and medical clearance - Selected RRT members
+    - Post-Deployement - RRT Responders
+  - RRT Manager(s): green
     - Acceptance
-    - Availability, trainings and medical clearance - RRT member
+    - Deployment availability, trainings and medical clearance - Selected RRT members
     - Deployment
+    - Post-Deployment
 
 | Stage                                                       | Description                                                                                                                                                                                                                                                                                                         |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enrollment                                                  | The enrollment stage collects the basic biodata of the person, address and contacts and emergency contact.<br> The Tracked Entity Type for the HIV Case.<br> Surveillance program is ‘Person’.<br> The enrollment date is referred as the registration date in the RRT tracker program <br>**The stage is non-repeatable**               |
-| Education and professional experience                       | Collects information on current employment, language and their level, academic background details, practising licence with the possibility of annexing the Curriculum Vitae.<br> **The stage is non-repeatable**                                                                                                            |
-| Skills                                                      | Collects information on skills acquired by the responder through his career.<br> **The stage is non-repeatable**                                                                                                                                                                                                            |
+| Enrollment                                                  |The enrolment stage collects the basic biodata of the person, address and contacts and emergency contact.<br> The Tracked Entity Type for the Rapid Response Team program is ‘Person’.<br> TThe enrolment date is referred as the registration date in the RRT tracker program <br>**The stage is non-repeatable**               |
+| Education and professional experience                       | Collects information on current employment, language and their proficiency, academic background details, practising licence with the possibility of annexing the Curriculum Vitae.<br> **The stage is non-repeatable**                                                                                                            |
+| Skills                                                      | Collects information on skills and their perceived technical level acquired by the responder through their career.<br> **The stage is non-repeatable**                                                                                                                                                                                                            |
 | Acceptance                                                  | Report key information collected on the “Educational and professional experience” and “Skills” stage that are used on the vetting process.<br> The report date refers to the acceptance date <br>**The stage is non-repeatable**                                                                                                |
-| Availability, trainings and medical clearance - RRT member  | The stage is accessible only once the responder has been accepted in the RRT and collect information on availability, medical clearance details such as vaccination and physically suitable certificate, trainings done and report the ones requested to be completed by the supervisor <br>**The stage is non-repeatable** |
-| Availability, trainings and medical clearance - RRT Manager | The stage is accessible only once the responder has been accepted in the RRT reporting key information collected on the “Availability, trainings and medical clearance - RRT member” to determine if the RRT member is suitable for deployment<br> **The stage is non-repeatable**                                          |
-| Roster deployment                                           | The stage is accessible only once the RRT member has been confirmed to be suitable for deployment and collect information on the deployment details, occupational hazards and outcome.<br> The report date refer to the date in which the deployment has been offered to the RRT member<br> **The stage is repeatable**         |
+| Availability, trainings and medical clearance - RRT member  | The stage is accessible only once the responder has been accepted to the RRT roster and collects information on availability, medical clearance details such as vaccination and physically suitable certificate, completed training and reports the ones requested to be completed by the supervisor. <br>**The stage is non-repeatable** |
+| Availability, trainings and medical clearance - RRT Manager | The stage is accessible only once the responder has been accepted to the RRT roster, reporting key information collected on the “Availability, trainings and medical clearance - RRT member” to determine if the RRT member is suitable and ready for deployment.<br> **The stage is non-repeatable**                                          |
+| Roster deployment                                           | The stage is accessible only once the RRT member has been confirmed to be suitable and ready for deployment and collect information on the deployment details, occupational hazards and outcome.<br>The report date refers to the date in which the deployment has been offered to the RRT member<br> **The stage is repeatable**         |
 
 ### Tracked Entity Type
 
@@ -123,17 +129,17 @@ The DHIS2 Rapid Response Team rostering tracker program allows for the enrollmen
 
 ### Enrollment
 
-When a person is enrolled in the Rapid Response Team  program as a Tracked Entity Instance (TEI), Tracked Entity Attributes (TEA) are recorded to form the case profile. Note that several TEAs are shared across DHIS2 Tracker programs; these are configured with a prefix ‘GEN’ (general) to indicate they are shared between tracker programs. Check out the [Common Metadata Library](https://docs.dhis2.org/en/implement/health/dhis2-health-data-toolkit/common-metadata-library/design.html) for more information on shared tracker metadata.
+When a person is enrolled in the Rapid Response Team roster program as a Tracked Entity Instance (TEI), Tracked Entity Attributes (TEA) are recorded to form the case profile. Note that several TEAs are shared across DHIS2 Tracker programs; these are configured with a prefix ‘GEN’ (general) to indicate they are shared between tracker programs. Check out the [Common Metadata Library](https://docs.dhis2.org/en/implement/health/dhis2-health-data-toolkit/common-metadata-library/design.html) for more information on shared tracker metadata.
 
 The TEA **System ID** serves as a unique identifier in order to streamline the identification process when the responder or RRT member needs to be searched in the system. The **System ID** value is automatically generated with the pattern “RANDOM(*****)” to serve as an example, please refer to the [DHIS2 User Documentation on configuring system-wide unique identifiers as DHIS2 TEAs](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-238/configuring-the-system/programs.html#create_tracked_entity_attribute) for more details and customizations.
 
-On the address and contacts sections, the TEAs Contact phone number  and Email have been marked as mandatory as this elements can be used on the notification sent to the responders
+On the address and contacts sections, the TEAs **Contact phone number** and **Email** have been marked as mandatory as this elements can be used on the notification sent to the responders
 
 ### Stage 1: Education and professional experience (non-repeatable)
 
 On this stage the responder is requested to introduce information related to their current employment, languages, academic background and practising licence.
 
-In the Current Employment section the information related to the supervisor name and contacts can be used for notifications or in case approval of deployment and/or validation of availability.
+In the *Current Employment* section, the information related to the supervisor’s name and contacts can be used for notifications or in case approval of deployment and/or validation of availability.
 
 ![Current employment section](resources/image/RRT_002.gif)
 
@@ -181,7 +187,7 @@ A serie of Program Rules have been created to:
 - Combine and report key information as in Employment status, Language, Academic background example and Licence status
 - Highlight significant information as the licence expired VS valid according to the **date of expiry** assigned on the Education and professional experience stage
 
-In case the RRT manager will need to consult any attachment that are presents in the **Education and professional experience** stage, can simply open the stage and download them
+In case the RRT manager will need to consult any attachment that are presents in the **Education and professional experience** stage, can simply open the stage and download them.
 
 ![Attachment consultation](resources/image/RRT_008.gif)
 
@@ -195,13 +201,13 @@ The stages **Availability, trainings and medical clearance - RRT member** and **
 
 According to the role assigned to the user, the information reported and available are different:
 
-| Sections                                | RRT member                                      | RRT manager                                                                             |
-|-----------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Availability                            | Report availability                             | Consult availability                                                                    |
-| Medical clearance - Vaccination         | Report vaccination status                       | Consult vaccination status                                                              |
-| Medical clearance - Physical evaluation | Report physical suitability and any certificate | Consult physical suitability                                                            |
-| Trainings to be completed               | Consult trainings that need to be completed     | Report which training should be completed (the list exclude the ones already completed) |
-| Trainings done                          | Report the training done                        | Consult the training done                                                               |
+| Sections                                | RRT member                                          | RRT manager                                                                                 |
+|-----------------------------------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Availability                            | **Report** availability                             | **Consult** availability                                                                    |
+| Medical clearance - Vaccination         | **Report** vaccination status                       | **Consult** vaccination status                                                              |
+| Medical clearance - Physical evaluation | **Report** physical suitability and any certificate | **Consult** physical suitability                                                            |
+| Trainings to be completed               | **Consult** trainings that need to be completed     | **Report** which training should be completed (the list exclude the ones already completed) |
+| Trainings completed                     | **Report** the training done                        | **Consult** the training done                                                               |
 
 ![Example of information reported by the RRT member and visible to the RRT manager ](resources/image/RRT_010.png)
 
@@ -214,25 +220,25 @@ Once all the requirements have been fulfilled, the RRT manager can then select t
 
 ### Stage 5: Roster deployment (repeatable)
 
-This is the only repeatable stage of the tracker program and each event should correspond to a different deployment. In the case the RRT member has been deployed several times for the same emergency, we should then have several events corresponding to each one of the deployment.
+This is the only repeatable stage of the RRT Roster, and each event should correspond to a different deployment. In the case an RRT member has been deployed numerous times during the same public health emergency, we should then have several events corresponding to each of the deployments.
 
 The stage is divided into two main areas:
 
 - Pre-deployment:
   - Deployment information
-- Post deployment:
   - Occupational hazards
-  - Outcome
+- Post deployment:
+  - Deployment outcomes
   - Deployment resources
 
-In the **Deployment information** section the RRT manager will need to report the main details on the emergency operation such as the type of response, place of deployment, type of deployment, position and roles and responsibilities alongside the Team Lead/Supervisor name and contacts.
+In the **Deployment information** section, the RRT manager will need to report the main details on the emergency operation such as the type of response, place of deployment, type of deployment, position and terms of reference alongside the Team Lead/Supervisor name and contacts.
 These information can be used as notification text to inform the RRT member of a possible deployment (see notification section) 
 
 It’s strongly advised to have an Option Set assigned to the Data Element **Name of the emergency operation** for analytics purpose avoiding free text (the option set provide constitute an example)
 
 ![Deployment information section](resources/image/RRT_012.png)
 
-Once the RRT member accepted the proposed deployment and has been deployed, the RRT manager can then fill the post deployment information
+Once the RRT member accepted the proposed deployment and has been deployed, the RRT member and RRT manager can then complete the post-deployment information
 
 ![Post deployment sections](resources/image/RRT_013.gif)
 
@@ -249,7 +255,7 @@ Within all the program stages, there are a number of data elements that are clon
 - Program Rules:
   - Hide the consequent Data Elements if the previous have not been selected
   - Show error in case the same Option has been selected more than once in the same group of Data Elements
-  - 
+
 For example, to capture multiple languages, there are a series of data elements that are cloned:
 
 RRT - Language - 1 [jQup5YqFyeP]
@@ -290,7 +296,9 @@ Visualisations with the characteristics of RRT members such as the role to which
 
 #### RRT member linelist
 
-An example of linelist with all the RRT member and their main/relevant information that can be use for the selection of possible candidates for deployments
+Deployment RRT Roster Line lists can be customized based on RRT member availability, skills, level of expertise, RRT validated position, languages, and location.  
+
+An example of line list with RRT members and their main/relevant information that can be used for the selection of potential candidates for deployment.
 
 ![RRT members linelist](resources/image/RRT_019.png)
 
@@ -324,10 +332,11 @@ The password for both users is the same as the generic demo user: District1#
 
 ### Notifications
 
-The DHIS2 native Program notification functionality can help to streamline and enhance the management of a roster sending automatic notifications to both RRT member and manager.
+The DHIS2 native **Program notification** functionality can help to streamline and enhance the management of a roster sending automatic notifications to both RRT member and manager.
 
-A serie of program notifications have been created in the demo to show case some of these use cases:
+A series of program notifications have been created in the demo to showcase some of these use cases:
 
 - RRT member is accepted on the roster: a notification is sent to the email of the RRT member to notify that has been accepted to the roster
 - Suitable for deployment: a notification is sent to the email of the RRT member to notify that is suitable for deployment
+- RRT Required training: a notification is sent to the email of the RRT member to notify that a required training needs to be completed
 - Deployment proposal: a notification is sent to the email of the RRT member to notify of a proposed deployment
