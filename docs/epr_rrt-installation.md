@@ -134,17 +134,9 @@ A metadata package usually contains several user groups:
 * RRT - Admin
 * RRT - Data capture
 
-By default, the following is assigned to these user groups
-
-| Object              | User Groups                             |                                                  |                                                     |
-|---------------------|-----------------------------------------|--------------------------------------------------|-----------------------------------------------------|
-|                     | RRT - Access                            | RRT - Admin                                      | RRT - Data capture                                  |
-| Tracked entity type | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can capture and view |
-| Program             | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can capture and view |
-| Program Stages      | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can capture and view |
-| Dashboards          | Metadata : can view <br> Data: can view | Metadata : can edit and view <br> Data: can view | Metadata : can view <br> Data: can view             |
-
-You will want to assign your users to the appropriate user group based on their role within the system. You may want to enable sharing for other objects in the package depending on your set up. Refer to the [DHIS2 Documentation](https://docs.dhis2.org/master/en/dhis2_user_manual_en/about-sharing-of-objects.html) for more information on configuring sharing.
+The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in
+the package may be adjusted depending on the set-up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more
+information.
 
 ### User Roles
 
